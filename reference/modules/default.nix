@@ -113,8 +113,6 @@
     inputs.valkyrie.packages.${pkgs.system}.default
   ];
 
-  virtualisation.waydroid.enable = true;
-
   liminalOS.theming = {
     # wallpaper = "${inputs.wallpapers}/aesthetic/afterglow_city_skyline_at_night.png";
     # wallpaper = "${
@@ -155,7 +153,15 @@
         #   url = "https://images.unsplash.com/photo-1545893835-abaa50cbe628?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2hhbmdoYWl8ZW58MHx8MHx8fDA%3D";
         #   hash = "sha256-QH2CYMSJcfF6bBxpjb/gJImgPbVjSeISB/PuSRLdePs=";
         # };
-        wallpaper = "${inputs.wallpapers}/cityscapes/shanghai-the-bund.png";
+        wallpaper = pkgs.fetchurl {
+          # url = "https://code.youwen.dev/youwen5/wallpapers/raw/branch/main/anime-with-people/eternal-blue.jpg";
+          # url = "https://w.wallhaven.cc/full/rr/wallhaven-rrv23j.jpg";
+          # hash = "sha256-PCyWyFgMxVYgDjPMtFbQoMTzN61zdUtiP6Lmgc3dRfk=";
+          # hash = "sha256-PcE9TR82IupRl/zqAZ028GMuARAk2CQaU0XUNfw4gkI=";
+          url = "https://w.wallhaven.cc/full/ml/wallhaven-mld5v8.png";
+          hash = "sha256-I/6A8yOvKYYgPiayn/RJ254nW6JVZ7eKidTZjEJ8xao=";
+        };
+
         base16Scheme = "${pkgs.base16-schemes}/share/themes/oxocarbon-light.yaml";
         polarity = "light";
       };

@@ -28,11 +28,6 @@
     };
   };
 
-  services.mullvad-vpn = {
-    enable = true;
-    package = pkgs.mullvad-vpn;
-  };
-
   boot = {
     loader.systemd-boot.enable = true;
     loader.efi.canTouchEfiVariables = false;
@@ -44,7 +39,7 @@
 
   hardware.asahi = {
     enable = true;
-    peripheralFirmwareDirectory = "${inputs.apple-firmware}/firmware";
+    peripheralFirmwareDirectory = ./firmware;
   };
 
   nixpkgs.overlays = [

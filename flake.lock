@@ -50,22 +50,6 @@
         "type": "github"
       }
     },
-    "apple-firmware": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1743755657,
-        "narHash": "sha256-0dLRi5QFuCLVedJgHT6eO5lJ7r8gJjR7a9F/t11UItE=",
-        "owner": "youwen5",
-        "repo": "apple-firmware",
-        "rev": "da57d34f99f2789368e2def65b832239346dcbee",
-        "type": "github"
-      },
-      "original": {
-        "owner": "youwen5",
-        "repo": "apple-firmware",
-        "type": "github"
-      }
-    },
     "apple-silicon": {
       "inputs": {
         "flake-compat": "flake-compat",
@@ -795,7 +779,6 @@
     "root": {
       "inputs": {
         "agenix": "agenix",
-        "apple-firmware": "apple-firmware",
         "apple-silicon": "apple-silicon",
         "flake-parts": "flake-parts",
         "flake-utils": "flake-utils",
@@ -818,7 +801,6 @@
         "ucode": "ucode",
         "valkyrie": "valkyrie",
         "viminal": "viminal",
-        "wallpapers": "wallpapers",
         "zen-browser": "zen-browser",
         "zenTyp": "zenTyp"
       }
@@ -1152,15 +1134,15 @@
       "locked": {
         "lastModified": 1746987703,
         "narHash": "sha256-nohUzFfguTGYeZCe5Ky5TXPqZhei5HuoPKsUsPbBN5g=",
-        "owner": "youwen5",
-        "repo": "valkyrie",
+        "ref": "refs/heads/main",
         "rev": "8a22da3b7743e052776013b48ed829cee4c48650",
-        "type": "github"
+        "revCount": 4,
+        "type": "git",
+        "url": "ssh://git@github.com/youwen5/valkyrie"
       },
       "original": {
-        "owner": "youwen5",
-        "repo": "valkyrie",
-        "type": "github"
+        "type": "git",
+        "url": "ssh://git@github.com/youwen5/valkyrie"
       }
     },
     "viminal": {
@@ -1179,22 +1161,6 @@
       "original": {
         "owner": "youwen5",
         "repo": "viminal2",
-        "type": "github"
-      }
-    },
-    "wallpapers": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1755281805,
-        "narHash": "sha256-MoM9rRRnsG89hOE2JiQhbmuv7J3QebHKsdR/Xo6FrS4=",
-        "owner": "youwen5",
-        "repo": "wallpapers",
-        "rev": "d615b7168fdc99d937d40e7f22b1f2ed95ac619b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "youwen5",
-        "repo": "wallpapers",
         "type": "github"
       }
     },
